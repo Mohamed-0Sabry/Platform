@@ -3,9 +3,82 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/fcf8266609.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lalezar&family=Noto+Kufi+Arabic:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* Hide the scrollbar while still allowing scrolling */
+      .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+      }
+
+      .scrollbar-hide {
+        -ms-overflow-style: none; /* IE and Edge */
+      }
+    </style>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              noto: ["Noto Kufi Arabic", "sans-serif"],
+              Lalezar: ["Lalezar", "system-ui"],
+            },
+            colors: {
+              mono: {
+                dark: "#030303",
+                lightbrown: "#83725D",
+                darkbrown: "#2E2923",
+                camel: "#AD8A5E",
+                camoon: "#D89B51",
+                yellow: "#FFA435",
+              },
+              shades: {
+                lightest: "#F1D7B7",
+                light: "#CFB99E",
+                origin: "#2E2923",
+                dark: "#AD9B84",
+                darker: "#8B7C6A",
+                darkest: "#695E50",
+              },
+            },
+          },
+        },
+      };
+    </script>
+
+    <title>Elmanasa</title>
   </head>
-  <body>
-    <div class="done"></div>
+  <body class="overflow-y-scroll scrollbar-hide font-noto font-semibold">
+    <nav
+      class="flex flex-row justify-between p-7 text-zinc-200 absolute w-full h-fit items-center z-10 text-[1.2vw]"
+    >
+      <div class="logo text-[3vw]"><i class="fa-brands fa-pied-piper"></i></div>
+      <div class="list">
+        <ul class="flex flex-row gap-10">
+          <li><a href="">الصفحة الرئيسية</a></li>
+          <li><a href="">الدروس</a></li>
+          <li><a href="">المدرسين</a></li>
+          <li><a href="">نبذة عنا</a></li>
+          <li><a href="">آراء وتقييمات</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main class="">
+      <!-- !?  first part-->
+      <img src="imgs/img1.jpg" alt="Shelf" />
+    </main>
   </body>
 </html>
